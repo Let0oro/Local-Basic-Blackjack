@@ -1,0 +1,77 @@
+<!-- (! > TAB) -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+
+    <!-- AÑADIR PARA BOOTSTRAP -->
+    
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--  -->
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+
+    <header class='titulo'>Blackjack</header>
+
+    <div class="row mt-2">
+        <div class="col text-center">
+            <button class="btn btn-danger" >Nuevo Juego</button>
+            <button disabled="disabled" class="btn btn-primary" >Pedir carta</button>
+            <button disabled="disabled" class="btn btn-primary" >Detener</button>
+            <button class="btn btn-success" >Eliminar Jugador</button>
+            <button class="btn btn-success" >Nuevo Jugador</button>
+        </div>
+        
+    </div>
+    
+    
+    <div class="row" id="players">            
+        <div class="col container">    
+            <h3 class="col">J1 - <small>0</small></h3>
+            <div id="jugador-cartas" class="divCartas">
+                
+            </div>
+        </div>
+        
+        <!-- <div id="NewJUG" class="col container">
+            <h3 class="col">2- <small>0</small></h3>
+            <div id="computadora-cartas" class="divCartas">
+                
+            </div>
+            
+        </div>           -->
+        
+        
+    </div>
+    
+    
+    <div class="row">            
+        <div class="col container text-center">
+            <h3 class="col">💻- <small>0</small></h3>
+            <div id="computadora-cartas" class="divCartas">
+                <!-- <img class="carta" src="./assets/cartas/2C.png"> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="module" src="assets/js/underscore-umd-min.js"></script>
+    <script type="module" src="assets/js/juego.js"></script>
+
+    <script>
+
+        // console.log(miModulo); // No se puede porque el JS es tipo module
+
+    </script>
+
+</body>
+</html>
